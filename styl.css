@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(-45deg, blue, white, red); 
+}
+
+header,nav,main,footer, figcaption, .sociosform {
+    display: grid;
+    place-content: center;
+    grid-template-columns:100%;
+    text-align: center;   
+}
+hr{
+border:1px groove rgb(221, 204, 204);
+}
+
+abbr{
+    text-decoration: none;
+}
+
+h1{
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    position: fixed;
+    min-height: 1rem;    
+}
+
+.logo{
+    margin-top: 5rem;
+    order: 1;
+    display: inline;
+}
+
+
+ul {
+    width: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #880707;
+    border-bottom:3px solid rgb(73, 5, 5);
+    list-style-type: none;
+    border: 0;
+    margin: 0;
+    border-bottom: 25px;
+    position: fixed;
+    left: 0;
+    top: 2rem;    
+}    
+
+
+li a,
+li:visited{
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    color: rgb(221, 204, 204);
+    border-radius: 20%;
+}
+
+li a:hover,
+li a:focus,
+li:hover,
+li:focus{
+    color: #faebd7;
+    background-color: #49010aec;
+}
+
+
+ol{
+    list-style-type: none;
+}
+
+.sociosli{
+    color: #333;
+}
+
+.sociosli:hover{
+    background-color: rgba(0, 128, 0, 0);
+    color: #333;
+}
+
+ th, td, caption {
+    border: 1px solid #333;
+    font-family:'Poppins', sans-serif;
+    padding: 0.1rem;
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+caption{
+    background-color: #880707;
+    color: rgb(221, 204, 204);
+}
+
+h2, p, summary{
+    margin-left:1rem ;
+}
+
+.center {
+    display: flex;
+    place-content: center;
+}
+
+/* TABEL */
+
+/* https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075 */
+
+div{
+    display: flex;
+    flex-flow:row wrap;
+}
+
+
+.flex-tabel-container{
+    background-color: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #333 solid 1px;
+}
+
+.flex-tabel-header{
+    width: 100%;
+    place-content: center;
+    background-color: #880707;
+    color: rgb(221, 204, 204);
+}
+
+.flex-tabel-header2{
+    flex-flow: row nowrap;
+    border-top: #333 1px solid;
+    width: 100%;
+    justify-content:center;
+    font-weight: bold;
+}
+
+.flex-tabel-row{
+    flex-flow: row nowrap;
+    border-top: #333 1px solid;
+    width: 100%;
+    justify-content:center;
+}
+
+.row, .first-row{
+    width: 33%;
+    justify-content:center;
+}
+
+.row{
+    border-left: #333 solid 1px;
+}
+
+.menusocios{
+    margin-top: 0.5rem;
+}
+
+
+#socios{
+    width: 300px;
+    margin-right: 50px;
+    margin-top: 0px;
+    float: right;
+}
+
+/* Form */
+
+button, input, select, textarea{
+    font-family: inherit;
+    font-weight: bolder;
+}
+legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+fieldset{
+    border:2px groove rgb(221, 204, 204);
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    flex-direction: row nowrap; 
+}
+
+button{
+    
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #880707;
+    color: rgb(221, 204, 204);
+    margin-left: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease 0s;
+}
+
+button:hover,
+button:focus{
+    color: #faebd7;
+    background-color: #49010aec;
+    transform:translateY(-7px);
+
+}
+
+.msg{
+    min-width: 650px;
+}
+
+/* .mieszam{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 85% 10% 10%;
+    margin-bottom: 3rem;
+}
+
+.submit{
+   grid-row-start:2;
+   grid-row-end: 3; 
+   grid-column-end: 2;   
+}
+
+.reset{
+    grid-row-start: 3;
+    grid-row-end: 4; 
+   grid-column-end: 2;   
+}
+
+fieldset{
+    grid-column-start: 0;
+    grid-column-end: 2;
+}
+
+.logosocios{
+    grid-row-end: 2;
+   
+}
+
+.thanks{
+    grid-row-start: 2;
+}
+ */

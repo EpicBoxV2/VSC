@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="autor" content="Paweł">
+        <meta name="opis" content="Strona powstała abym mógł poćwiczyć zdobyte już umiejętności">
+        <title>Socios</title>
+        <link rel="icon" href="favicon.ico" type="image\x-icon">
+        <link rel="stylesheet" href="styl.css" type="text/css">
+    </head>
+    <body>
+<header id="gora">
+   
+    <h1>Wisła Socios</h1>
+        
+        <nav aria-label="MainNav">
+            <ul class="menusocios">
+                <li><a href="projekt.html#owisle" target="_blank"> O Wiśle Kraków </a></li> <!--tak się przenosi do sekcji na innej stronie-->
+                <li><a href="#zapisy">Zapisz się do Socios</a></li>
+                <li><a href="projekt.html#terminarz" target="_blank">Terminarz</a></li> 
+                <li><a href="#kontakt">Skontaktuj się z nami</a></li>
+            </ul>
+
+        </nav>
+</header>
+<br>
+<article id="zapisy" class="sociosform">
+    <h2>Zostań Socios!</h2>
+    <p>Aby zostać Socios i wspierać Wisłę Kraków wypełnij poniższy formularz:</p>
+    <form action="https://httpbin.org/post" method="post">
+       <!--  <div class="mieszam"> --><Fieldset> <!--Tworzy obramowanie dla elementów formularza-->
+            <legend>Twoje dane</legend>
+            <p><!-- <Label for="Imie">Imię:</Label> -->
+            <input type="text" name="Imie" id="Imie" placeholder="Imię" required></p>
+            
+            <p><!-- <Label for="Nazwisko">Nazwisko:</Label> -->
+            <input type="text" name="Nazwisko" id="Nazwisko" placeholder="Nazwisko" required></p>
+            
+            <p><!-- <label for="telefon">Numer telefonu:</label> -->
+            <input type="tel" name="telefon" id="telefon" placeholder="Numer telefonu" pattern="[0-9]{9}" required></p>
+
+            <p><!-- <Label for="email">Adres e-mail</Label> -->
+            <input type="email" name="email" id="email" placeholder="E-mail" required></p>
+
+            <p><label for="sektor">Ulubiony sektor:</label>
+            <select name="sektor" id="sektor"> 
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+            </select> </p>
+
+            <p><Label for="rok">Kiedy zacząłeś kibicować Wiśle Kraków?</Label>
+            <input type="number" name="rok" id="rok" min="1906" max="2023" step="1" value="2000">
+            </p>
+
+            
+        </Fieldset> 
+        <div class="wrap"> 
+        <button class="submit" type="submit">Wyślij</button>
+        <button  class="reset" type="reset">Resetuj</button> </div>
+        
+    </form>
+
+   <!--  <div> <img src="obrazek_socios.png" alt="logo socios" class="logosocios"> </div> -->
+    <p class="thanks">Dziękujemy, skontaktujemy się z Tobą!</p><!-- </div> -->
+
+
+</article>
+<hr>
+<article id="kontakt" class="sociosform">
+    <h2>Skontaktuj się z nami!</h2>
+    <ol>
+        <li class="sociosli"><a class="sociosli" href="tel:123123123" alt="123123123" title="123123123"> Zadzwoń </a> od poniedziałku do czwartku w godzinach:</li>
+        <dt>od 8 do 16</dt>
+        <dt>W piątek od 8 do 15</dt>
+        <li class="sociosli" >Napisz wiadomość
+            <form action="mailto:mixer0909@gmail.com?subject=wiadomość ze strony" method="post" enctype="text/plain">
+                
+                <textarea class="msg"name="Wiadomosc" id="wiadomosc " cols="30" rows="10" placeholder="Napisz do nas"></textarea>
+                <br>
+                <button type="submit" value="send">Wyślij</button> 
+            </form> 
+            
+
+        </li> <!--To ma otwierać gmaila z wpisaną wiadomością-->
+
+        
+
+    </ol>
+</article>
+<hr>
+<footer>
+    
+    <p>&lt;&lt;&lt;&copy;PM&gt;&gt;&gt;
+    <br>
+    <a href="#gora">Powrót na górę</a>
+    <br>
+</footer>    
+</body>
+</html>
